@@ -127,12 +127,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8628894206541439686}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &109102841 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6980590290987979144, guid: aab82d33e7bfbe2409168ff3d157634e,
-    type: 3}
-  m_PrefabInstance: {fileID: 8628894206541439686}
-  m_PrefabAsset: {fileID: 0}
 --- !u!50 &109102842
 Rigidbody2D:
   serializedVersion: 4
@@ -530,6 +524,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d827090eb8f1d40a1fcc57620f8e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1239185807 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8628894207736044361, guid: aab82d33e7bfbe2409168ff3d157634e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8628894206541439686}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1239185809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,10 +544,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sling: {fileID: 1239185805}
   angle: 0
-  firePoint: {fileID: 109102841}
+  firePoint: {fileID: 1239185807}
   bulletPrefab: {fileID: 1838263076364756737, guid: 7e33d8ea2084ff247a6f38ff900151da,
     type: 3}
-  bulletForce: 20
+  bulletForce: 1
   slingshot: 0
 --- !u!1 &1407781025
 GameObject:

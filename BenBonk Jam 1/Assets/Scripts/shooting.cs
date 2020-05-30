@@ -9,8 +9,8 @@ public class shooting : MonoBehaviour
     public float angle;
     public Transform firePoint; //where it shoots out from
     public GameObject bulletPrefab; //prefabbed ammo
-    public float bulletForce = 20f;
-    public bool slingshot;
+    public float bulletForce = 1f;
+    bool slingshot;
 
     // Update is called once per frame
     void Update()
