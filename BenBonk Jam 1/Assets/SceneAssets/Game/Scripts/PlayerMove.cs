@@ -22,7 +22,6 @@ public class PlayerMove : MonoBehaviour
         else{
             anim.SetBool("isRunning", false);  
 		}
-        
     }
 
     void FixedUpdate()
