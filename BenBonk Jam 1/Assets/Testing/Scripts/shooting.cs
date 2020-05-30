@@ -5,8 +5,6 @@ using UnityEngine.Experimental.GlobalIllumination;
 
 public class shooting : MonoBehaviour
 {
-    public slingshotMovement sling;
-    public float angle;
     public Transform firePoint; //where it shoots out from
     public GameObject bulletPrefab; //prefabbed ammo
     public float bulletForce = 1f;
@@ -19,8 +17,6 @@ public class shooting : MonoBehaviour
         if (slingshot) {
             Shoot();
         }
-        //gets angle from slingshotMovement
-        angle = sling.getAngle();
     }
 
     void Shoot() { //shooting function
