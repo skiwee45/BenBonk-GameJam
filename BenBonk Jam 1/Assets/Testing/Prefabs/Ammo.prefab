@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1838263076364756736}
   - component: {fileID: 8110369090351925013}
   - component: {fileID: 2382333728048755150}
+  - component: {fileID: 8527088758830738481}
   m_Layer: 0
   m_Name: Ammo
   m_TagString: Untagged
@@ -96,7 +97,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -131,6 +132,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.028683692, y: 0.027055405}
   m_EdgeRadius: 0
+--- !u!114 &8527088758830738481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838263076364756737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 917503a4e4d3dd2428012fc2421a6568, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitEffect: {fileID: 6400042465581983985, guid: 95b9c3cb99e340340b4e7f056f0ce6c7,
+    type: 3}
 --- !u!1 &5723028932896974403
 GameObject:
   m_ObjectHideFlags: 0

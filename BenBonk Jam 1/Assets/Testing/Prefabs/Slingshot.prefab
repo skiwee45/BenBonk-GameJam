@@ -141,7 +141,7 @@ MonoBehaviour:
   firePoint: {fileID: 8628894207736044361}
   bulletPrefab: {fileID: 1838263076364756737, guid: 7e33d8ea2084ff247a6f38ff900151da,
     type: 3}
-  bulletForce: 1.07
+  bulletForce: 0.1
 --- !u!114 &1680670865864123333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,3 +160,5 @@ MonoBehaviour:
   bulletForce: 1.06
   cam: {fileID: 0}
   player: {fileID: 0}
+  attackRate: 1.5
+  nextAttackTime: 0

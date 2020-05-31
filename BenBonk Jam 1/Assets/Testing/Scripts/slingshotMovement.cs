@@ -16,7 +16,7 @@ public class slingshotMovement : MonoBehaviour
     void Update()
     {
         mouse = cam.ScreenToWorldPoint(Input.mousePosition); //makes a vector 2 of the mouse position
-        if (angle1 > 90 || angle1 < -90)
+        if (angle1 > 90 || angle1 < -90) //checks to flip sides or not
         {
             flipped = true;
             offset.x = -0.06f;
@@ -44,5 +44,10 @@ public class slingshotMovement : MonoBehaviour
 
     public float getAngle() {
         return angle1;
+    }
+
+    public void drop()
+    {
+        Destroy(gameObject);
     }
 }

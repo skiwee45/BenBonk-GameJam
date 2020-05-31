@@ -9,14 +9,22 @@ public class shooting : MonoBehaviour
     public GameObject bulletPrefab; //prefabbed ammo
     public float bulletForce = 1f;
     bool slingshot;
+    public float attackRate = 1f;
+    public float nextAttackTime;
 
     // Update is called once per frame
     void Update()
     {
-        slingshot = Input.GetButtonDown("Fire1"); //controls firing
-        if (slingshot) {
-            Shoot();
+        if (Time.time >= nextAttackTime)
+        {
+            slingshot = Input.GetButtonDown("Fire1"); //controls firing
+            if (slingshot)
+            {
+                Shoot();
+                nextAttackTime = Time.time + attackRate;
+            }
         }
+        
     }
 
     void Shoot() { //shooting function
