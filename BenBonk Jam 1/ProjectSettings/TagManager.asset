@@ -4,13 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Obstacle
   - enemy
+<<<<<<< HEAD
   - Fireball
   - boss
   - Boss
   - boss2
   - win
+=======
+  - Obstacle
+>>>>>>> parent of 36f4294... Merge branch 'CH123'
   layers:
   - Default
   - TransparentFX
@@ -20,9 +23,9 @@ TagManager:
   - UI
   - 
   - 
-  - Player
   - Obstacle
-  - 
+  - Enemy
+  - Player
   - 
   - 
   - 
