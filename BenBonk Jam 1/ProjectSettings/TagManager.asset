@@ -10,6 +10,7 @@ TagManager:
   - boss
   - Boss
   - boss2
+  - win
   layers:
   - Default
   - TransparentFX
