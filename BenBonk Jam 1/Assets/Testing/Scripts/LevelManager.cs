@@ -6,8 +6,12 @@ public class LevelManager : MonoBehaviour
 {
     public int numberOfEnemies;
     private bool levelDone = false;
-    public PanelFader fader;
+    public GameObject doors;
 
+    private void Start()
+    {
+        doors.SetActive(false);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -15,9 +19,9 @@ public class LevelManager : MonoBehaviour
         {
             if (numberOfEnemies <= 0)
             {
-                loadNextLevel();
                 Debug.Log("Next Level");
                 levelDone = true;
+                loadDoors();
             }
         }
     }
@@ -26,20 +30,8 @@ public class LevelManager : MonoBehaviour
         numberOfEnemies--;
     }
 
-    void loadNextLevel() //when next level must be loaded
+    void loadDoors()
     {
-        //black screen in and out
-        StartCoroutine(fadeINOUT());
-        //pick random next
-        //load next
-        //disable current
-
-    }
-    IEnumerator fadeINOUT()
-    {
-        fader.FadeIn();
-        //Wait for 2 seconds
-        yield return new WaitForSeconds(2);
-        fader.FadeOut();
+        doors.SetActive(true);
     }
 }

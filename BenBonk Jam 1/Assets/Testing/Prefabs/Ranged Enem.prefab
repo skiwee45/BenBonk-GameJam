@@ -67,8 +67,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   stopDistance: 0.65
-  player: {fileID: 0}
-  enemyMovement: {fileID: 0}
+  player: {fileID: 5341413457121131756, guid: 8a92df15b24680f45877da1177701225, type: 3}
+  enemyMovement: {fileID: 153887626935178008}
   startTimeBetweenShots: 1
   projectile: {fileID: 5457642939578246563, guid: 49c2ca8ceeecb174eb670baf852c5c59,
     type: 3}

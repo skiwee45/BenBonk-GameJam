@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2054829e766fca49b29a19e7ed975cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 5341413457121131756, guid: 8a92df15b24680f45877da1177701225, type: 3}
   speed: 25
   nextWaypointDistance: 0.17
 --- !u!50 &719043342373920775
