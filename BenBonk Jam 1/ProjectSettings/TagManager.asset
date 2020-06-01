@@ -4,9 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - enemy
   - Obstacle
-  - Door
+  - enemy
+  - Fireball
+  - boss
+  - Boss
+  - boss2
+  - win
+  - preboss
   layers:
   - Default
   - TransparentFX
@@ -16,10 +21,10 @@ TagManager:
   - UI
   - 
   - 
-  - Obstacle
-  - Enemy
   - Player
-  - Door
+  - Obstacle
+  - 
+  - 
   - 
   - 
   - 

@@ -22,7 +22,6 @@ public class EnemyHealth : MonoBehaviour
 		{
 			GameObject effect = Instantiate(dieEffect, transform.position, Quaternion.identity);
 			Destroy(effect, 5f);
-			FindObjectOfType<LevelManager>().killEnemy();
 			Destroy(gameObject);
 		}
 	}
