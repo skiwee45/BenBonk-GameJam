@@ -11,6 +11,8 @@ public class SpawnFireball : MonoBehaviour
     public float spawnTime = 0.1f;
     public bool firstStage = true;
 
+    public GameObject HealthBar;
+
     void Start()
     {
         StartCoroutine(fireballWaves());
@@ -30,4 +32,9 @@ public class SpawnFireball : MonoBehaviour
             spawnFireball();  
 		}
 	}
+
+    public void GetDamage(int damage){
+        HealthBar.GetComponent<Stage1Health>().TakeDamage(1);
+	}
+
 }

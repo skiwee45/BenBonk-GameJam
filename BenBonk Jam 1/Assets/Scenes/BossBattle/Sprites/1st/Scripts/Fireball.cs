@@ -19,6 +19,7 @@ public class Fireball : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.CompareTag("Player")) {
             //Debug.Log("Player hit!");
+            other.GetComponent<PlayerHealth>().TakeDamage(1);
         }
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(effect, 5f);

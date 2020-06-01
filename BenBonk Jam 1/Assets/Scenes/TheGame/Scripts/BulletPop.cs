@@ -14,6 +14,11 @@ public class BulletPop : MonoBehaviour
             collision.gameObject.GetComponent<EnemyHealth>().TakeDamage(1);
             Debug.Log("bullet damage hit");
         }
+        else if (collision.gameObject.CompareTag("boss"))
+        {
+            collision.gameObject.GetComponent<SpawnFireball>().GetDamage(1);
+            Debug.Log("bullet damage hit on boss");
+        }
         //particle effect and kills itself
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         Destroy(effect, 5f);
