@@ -9,6 +9,8 @@ public class ScytheShooting : MonoBehaviour
     public Transform firePoint;
     public GameObject scythePrefab;
 
+    public AudioSource sfx;
+
     public float scytheForce = 20f;
     public float spawnTime = 1f;
 
@@ -18,6 +20,7 @@ public class ScytheShooting : MonoBehaviour
     }
 
     void spawnSycthe(){
+        sfx.Play();
         GameObject scythe = Instantiate(scythePrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = scythe.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * scytheForce, ForceMode2D.Impulse);

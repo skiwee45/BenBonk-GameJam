@@ -11,6 +11,9 @@ public class SpawnFireball : MonoBehaviour
     public float spawnTime = 0.1f;
     public bool firstStage = true;
 
+    public AudioSource fire;
+    public AudioSource transformNext;
+
     public GameObject HealthBar;
 
     void Start()
@@ -20,6 +23,7 @@ public class SpawnFireball : MonoBehaviour
 
     private void spawnFireball()
     {
+        fire.Play();
         index = Random.Range (0, spawns.Length);
         currentPoint = spawns[index];
         GameObject a = Instantiate(fireballPrefab) as GameObject;
@@ -38,6 +42,7 @@ public class SpawnFireball : MonoBehaviour
 	}
 
     public void NextStage(GameObject boss, GameObject another){
+        transformNext.Play();
         boss.SetActive(false);
         another.SetActive(true);
 	}
