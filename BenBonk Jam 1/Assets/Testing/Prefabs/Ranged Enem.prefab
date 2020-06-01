@@ -72,7 +72,7 @@ MonoBehaviour:
   startTimeBetweenShots: 1
   projectile: {fileID: 5457642939578246563, guid: 49c2ca8ceeecb174eb670baf852c5c59,
     type: 3}
-  anim: {fileID: 0}
+  anim: {fileID: 153887627267287095}
 --- !u!114 &153887626935178008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,7 +85,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2054829e766fca49b29a19e7ed975cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 5341413457121131756, guid: 8a92df15b24680f45877da1177701225, type: 3}
   speed: 20
   nextWaypointDistance: 0.2
 --- !u!50 &153887626935178004
