@@ -13,7 +13,6 @@ public class EnemyRangedCombat : MonoBehaviour
     private float timeBetweenShots;
     public float startTimeBetweenShots;
     public GameObject projectile;
-    public Animator anim;
     private void Start()
     {
         //makes player transform to lock onto
@@ -35,23 +34,17 @@ public class EnemyRangedCombat : MonoBehaviour
         {
             transform.position = this.transform.position; //stop moving
             enemyMovement.enabled = false; //disables ai movement
-            Shoot();
         } else
         {
             enemyMovement.enabled = false; //disables ai movement
-            Shoot();
         }
-    }
 
-    void Shoot() 
-    {
+        //shooting if statements
         if (timeBetweenShots <= 0)
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
             timeBetweenShots = startTimeBetweenShots;
-            anim.SetTrigger("Attack");
-        }
-        else
+        } else
         {
             timeBetweenShots -= Time.deltaTime;
         }
