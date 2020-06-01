@@ -44,14 +44,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5143868094431872801, guid: 755ce0da7d7286740a99a81e16cbf106, type: 3}
+  - {fileID: 8557218394449347287, guid: f6dbdfa5fd02afa4685114b315830198, type: 3}
+  - {fileID: 7847396070181096151, guid: cbca6a680df1a084fb300b6ad8b9029d, type: 3}
+  - {fileID: 5227618041023446834, guid: 2ba76960eb4bb924f82bf0f6b0a5e43b, type: 3}
+  - {fileID: 5770630186889779769, guid: 607baf1dfee68bb4ebbc23a09f5eecfa, type: 3}
+  - {fileID: 4357909331718993500, guid: 55067f040dec97241b1c34ad37079fe7, type: 3}
+  - {fileID: 1799422912066763475, guid: 213387fd5521a5847b9e2022eea51705, type: 3}
   fader: {fileID: 0}
+  player: {fileID: 0}
+  resetPlayerDestination: {fileID: 0}
+  pathfinder: {fileID: 0}
+  records: {fileID: 0}
+  door: {fileID: 0}

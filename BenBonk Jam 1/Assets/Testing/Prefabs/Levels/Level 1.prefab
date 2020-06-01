@@ -64,6 +64,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberOfEnemies: 3
   doors: {fileID: 2409676794122531503}
+  NPC: {fileID: 7219439506537173056, guid: 13694b15df1de704295174188f33ef23, type: 3}
 --- !u!1001 &4379197741627329874
 PrefabInstance:
   m_ObjectHideFlags: 0

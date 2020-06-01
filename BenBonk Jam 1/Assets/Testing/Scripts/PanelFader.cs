@@ -13,13 +13,13 @@ public class PanelFader : MonoBehaviour
 
     public void FadeIn()
     {
-        blackPanel.CrossFadeAlpha(1, 2, false);
+        blackPanel.CrossFadeAlpha(1, 1, false);
         Debug.Log("FadeIn");
     }
 
     public void FadeOut()
     {
-        blackPanel.CrossFadeAlpha(0, 2, false);
+        blackPanel.CrossFadeAlpha(0, 1, false);
         Debug.Log("FadeOut");
     }
 }
