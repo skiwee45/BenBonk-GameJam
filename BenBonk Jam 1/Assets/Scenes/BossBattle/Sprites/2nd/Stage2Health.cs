@@ -20,5 +20,6 @@ public class Stage2Health : MonoBehaviour
     public void TakeDamage(int damage){
         anim.SetInteger("secondHealth", health - damage);
         health = health - 1;
+        Debug.Log("DAMAGED");
 	}
 }

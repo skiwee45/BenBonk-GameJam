@@ -12,7 +12,6 @@ public class SpawnFireball : MonoBehaviour
     public bool firstStage = true;
 
     public GameObject HealthBar;
-    public GameObject boss;
 
     void Start()
     {

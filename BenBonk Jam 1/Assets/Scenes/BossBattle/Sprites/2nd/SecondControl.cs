@@ -13,7 +13,7 @@ public class SecondControl : MonoBehaviour
 	}
 
     public void GetDamage(int damage){
-        HealthBar.GetComponent<Stage2Health>().TakeDamage(1);
+        HealthBar.GetComponent<Stage2Health>().TakeDamage(damage);
 	}
 
     public void Death(){
