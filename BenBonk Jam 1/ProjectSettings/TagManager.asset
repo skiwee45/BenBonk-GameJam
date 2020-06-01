@@ -11,6 +11,7 @@ TagManager:
   - Boss
   - boss2
   - win
+  - preboss
   layers:
   - Default
   - TransparentFX
