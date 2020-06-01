@@ -5,7 +5,7 @@ using Pathfinding;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject[] levels = new GameObject[10];
+    public GameObject[] levels = new GameObject[7];
     private int currentNumber;
     private GameObject currentLevel;
     public PanelFader fader;
@@ -41,10 +41,11 @@ public class GameManager : MonoBehaviour
         //Wait for 2 seconds
         yield return new WaitForSeconds(2);
         fader.FadeOut();
+        yield return new WaitForSeconds(2);
     }
 
     public void RandomGenerate()
     {
-        currentNumber = Random.Range(0, 10);
+        currentNumber = Random.Range(0, 7);
     }
 }
