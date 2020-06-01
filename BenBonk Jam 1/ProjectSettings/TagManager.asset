@@ -9,6 +9,7 @@ TagManager:
   - Fireball
   - boss
   - Boss
+  - boss2
   layers:
   - Default
   - TransparentFX
