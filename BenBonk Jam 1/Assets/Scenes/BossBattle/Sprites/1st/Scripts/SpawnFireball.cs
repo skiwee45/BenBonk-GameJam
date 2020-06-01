@@ -12,6 +12,7 @@ public class SpawnFireball : MonoBehaviour
     public bool firstStage = true;
 
     public GameObject HealthBar;
+    public GameObject boss;
 
     void Start()
     {
@@ -27,7 +28,7 @@ public class SpawnFireball : MonoBehaviour
 	}
     
     IEnumerator fireballWaves(){
-        while(firstStage=true){
+        while(firstStage == true){
             yield return new WaitForSeconds (spawnTime);
             spawnFireball();  
 		}
@@ -35,6 +36,11 @@ public class SpawnFireball : MonoBehaviour
 
     public void GetDamage(int damage){
         HealthBar.GetComponent<Stage1Health>().TakeDamage(1);
+	}
+
+    public void NextStage(GameObject boss, GameObject another){
+        boss.SetActive(false);
+        another.SetActive(true);
 	}
 
 }

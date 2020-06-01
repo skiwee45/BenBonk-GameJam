@@ -24,7 +24,7 @@ public class ScytheShooting : MonoBehaviour
 	}
 
     IEnumerator scytheWave(){
-        while(firstStage=true){
+        while(firstStage == true){
             yield return new WaitForSeconds (spawnTime);
             spawnSycthe();  
 		}
