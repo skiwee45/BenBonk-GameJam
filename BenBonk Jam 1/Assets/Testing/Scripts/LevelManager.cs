@@ -45,12 +45,4 @@ public class LevelManager : MonoBehaviour
         Debug.Log("NPC Loaded");
         NPC.SetActive(true);
     }
-
-    void killNPC()
-    {
-        Destroy(currentNPC);
-        Debug.Log("NPC destroyed");
-    }
-
-    
 }

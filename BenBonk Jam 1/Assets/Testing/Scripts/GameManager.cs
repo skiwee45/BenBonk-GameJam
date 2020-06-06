@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     }
     public void loadNextLevel() //when next level must be loaded
     {
+        Debug.Log("Hello");
         //count evidences
         addScore();
         if (levelsDone == false)
